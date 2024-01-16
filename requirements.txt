@@ -1,0 +1,14 @@
+alibabacloud-alimt20181012==1.2.1
+alibabacloud-credentials==0.3.2
+alibabacloud-endpoint-util==0.0.3
+alibabacloud-gateway-spi==0.0.1
+alibabacloud-openapi-util==0.2.2
+alibabacloud-openplatform20191219==2.0.0
+alibabacloud-oss-sdk==0.1.0
+alibabacloud-oss-util==0.0.6
+alibabacloud-tea==0.3.5
+alibabacloud-tea-fileform==0.0.5
+alibabacloud-tea-openapi==0.3.8
+alibabacloud-tea-util==0.3.11
+alibabacloud-tea-xml==0.0.2
+

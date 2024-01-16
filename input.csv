@@ -1,0 +1,67 @@
+Plugin ID,CVE,CVSS v2.0 Base Score,Risk,Host,Protocol,Port,Name,Synopsis,Description,Solution,See Also,Plugin Output,CVSS v3.0 Base Score
+69551,,,Low,192.168.1.1,tcp,443,SSL Certificate Chain Contains RSA Keys Less Than 2048 bits,"The X.509 certificate chain used by this service contains certificates
+with RSA keys shorter than 2048 bits.","At least one of the X.509 certificates sent by the remote host has a
+key that is shorter than 2048 bits. According to industry standards
+set by the Certification Authority/Browser (CA/B) Forum, certificates
+issued after January 1, 2014 must be at least 2048 bits.
+
+Some browser SSL implementations may reject keys less than 2048 bits
+after January 1, 2014. Additionally, some SSL certificate vendors may
+revoke certificates less than 2048 bits before January 1, 2014.
+
+Note that Nessus will not flag root certificates with RSA keys less
+than 2048 bits if they were issued prior to December 31, 2010, as the
+standard considers them exempt.","Replace the certificate in the chain with the RSA key less than 2048
+bits in length with a longer key, and reissue any certificates signed
+by the old certificate.",https://www.cabforum.org/wp-content/uploads/Baseline_Requirements_V1.pdf,"
+The following certificates were part of the certificate chain
+sent by the remote host, but contain RSA keys that are considered
+to be weak :
+
+|-Subject        : C=CN/ST=ZJ/L=HZ/CN=1eb4621677609125f8a7cde2ec39ce6d/OU=embeddedsofteware/E=com.cn
+|-RSA Key Length : 1024 bits
+",
+69551,,,Low,192.168.1.1,tcp,8443,SSL Certificate Chain Contains RSA Keys Less Than 2048 bits,"The X.509 certificate chain used by this service contains certificates
+with RSA keys shorter than 2048 bits.","At least one of the X.509 certificates sent by the remote host has a
+key that is shorter than 2048 bits. According to industry standards
+set by the Certification Authority/Browser (CA/B) Forum, certificates
+issued after January 1, 2014 must be at least 2048 bits.
+
+Some browser SSL implementations may reject keys less than 2048 bits
+after January 1, 2014. Additionally, some SSL certificate vendors may
+revoke certificates less than 2048 bits before January 1, 2014.
+
+Note that Nessus will not flag root certificates with RSA keys less
+than 2048 bits if they were issued prior to December 31, 2010, as the
+standard considers them exempt.","Replace the certificate in the chain with the RSA key less than 2048
+bits in length with a longer key, and reissue any certificates signed
+by the old certificate.",https://www.cabforum.org/wp-content/uploads/Baseline_Requirements_V1.pdf,"
+The following certificates were part of the certificate chain
+sent by the remote host, but contain RSA keys that are considered
+to be weak :
+
+|-Subject        : C=CN/ST=ZJ/L=HZ/CN=1eb4621677609125f8a7cde2ec39ce6d/OU=embeddedsofteware/E=com.cn
+|-RSA Key Length : 1024 bits
+",
+57582,,6.4,Medium,192.168.1.1,tcp,443,SSL Self-Signed Certificate,"The SSL certificate chain for this service ends in an unrecognized
+self-signed certificate.","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,,"
+The following certificate was found at the top of the certificate
+chain sent by the remote host, but is self-signed and was not
+found in the list of known certificate authorities :
+
+|-Subject : CN=8408c175368d7ffa65574c9e730a8f93
+",
+86420,,,None,192.168.1.1,tcp,0,Ethernet MAC Addresses,"This plugin gathers MAC addresses from various sources and
+consolidates them into a list.","This plugin gathers MAC addresses discovered from both remote probing
+of the host (e.g. SNMP and Netbios) and from running local checks
+(e.g. ifconfig). It then consolidates the MAC addresses into a single,
+unique, and uniform list.",n/a,,"The following is a consolidated list of detected MAC addresses:
+  - 84:9A:40:4A:22:E6
+",
