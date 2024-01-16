@@ -106,7 +106,7 @@ def get_translation(client: alimt20181012Client, text: str, use_fake_translation
         return text
 
 # 尝试检测API key
-alimt_client = create_alimt_client('LTAI5tCneC7rYW6XGzA5skJ7', '2AHhuZWhqnQC8fBCYMwuK4V3GhrxvS')
+alimt_client = create_alimt_client('LTAI5.......', '2AHhuZWhqnQ.......')
 api_key_valid = check_alimt_api_key(alimt_client)
 
 # 如果API key无效，询问用户是否启用伪翻译
