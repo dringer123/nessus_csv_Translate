@@ -11,6 +11,7 @@ translations.db中存储的一对一翻译原文和结果，加强了准确性�
 脚本翻译处理逻辑跟github其他人写的不一样，这个翻译库在后续使用中可以新增没有的数据、自定义更新等，高可维护
 
 1.修改你自己的阿里翻译api key，(申请阿里云翻译api key教程:https://www.zhihu.com/question/622754555/answer/3217852896)
+
 2.将需要翻译的文件复制到当前目录，改名为input.csv，运行以下命令将自动生成翻译后的output.csv
 python3 nessus_csv_Translate.py
 
