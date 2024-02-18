@@ -3,7 +3,7 @@ Nessus漏扫结果翻译：.csv在线翻译+本地翻译工具（全程gpt4.0完
 优先调用本地库的翻译结果，如果没查到就会调用阿里云在线翻译（需配置自己的api key等信息，没填就只有原文），在线翻译的结果存储至translations.db方便下次使用或修改
 
 ## 环境
-pip3 install -r requirements.txt
+pip3 install alibabacloud_alimt20181012
 （这主要是阿里云翻译的依赖）
 
 ## 用法
